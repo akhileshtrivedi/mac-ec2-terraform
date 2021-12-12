@@ -30,7 +30,7 @@ cd demo-terraform
 
 
 
-#### sudo vi variables.tf
+#### sudo vi main.tf
 
 
 ## Step-3 Now here, execute the below command:
