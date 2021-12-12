@@ -7,7 +7,23 @@
 
 #### AWSSecretKey=XXXXXXXXXX
 
-After downloading key, we have to set in mac PATH
+After downloading key, we have to set in mac 
+There are 2 ways,
+#### 1- Environment Variables 
+
+provider "aws" {}
+
+$ export AWS_ACCESS_KEY_ID="anaccesskey"
+$ export AWS_SECRET_ACCESS_KEY="asecretkey"
+$ export AWS_DEFAULT_REGION="us-west-2"
+
+#### 2- Static credentials (Hard-coded credentials are not recommended because it is very risky )
+
+  provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
 
  cd ~
 
