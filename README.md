@@ -11,7 +11,9 @@ After downloading key, we have to set in mac
 There are 2 ways,
 #### 1- Environment Variables 
 
-provider "aws" {}
+provider "aws" {
+
+}
 
 $ export AWS_ACCESS_KEY_ID="anaccesskey"
 
