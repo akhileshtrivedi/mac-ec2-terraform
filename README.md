@@ -22,9 +22,13 @@ $ export AWS_DEFAULT_REGION="us-west-2"
 #### 2- Static credentials (Hard-coded credentials are not recommended because it is very risky )
 
   provider "aws" {
+  
   region     = "us-west-2"
+  
   access_key = "my-access-key"
+  
   secret_key = "my-secret-key"
+  
 }
 
  cd ~
